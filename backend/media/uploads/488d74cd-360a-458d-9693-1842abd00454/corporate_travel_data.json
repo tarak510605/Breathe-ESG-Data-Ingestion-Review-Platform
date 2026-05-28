@@ -1,0 +1,63 @@
+[
+  {
+    "trip_id": "TRV1001",
+    "employee_id": "EMP778",
+    "travel_type": "Flight",
+    "origin": "MAA",
+    "destination": "DEL",
+    "cabin_class": "Economy",
+    "distance_km": 1760,
+    "amount": 14500,
+    "currency": "INR",
+    "scope_category": "Scope 3",
+    "status": "PENDING_REVIEW"
+  },
+  {
+    "trip_id": "TRV1002",
+    "employee_id": "EMP902",
+    "travel_type": "Hotel",
+    "hotel_nights": 4,
+    "hotel_city": "Mumbai",
+    "amount": 32000,
+    "currency": "INR",
+    "scope_category": "Scope 3",
+    "status": "APPROVED"
+  },
+  {
+    "trip_id": "TRV1003",
+    "employee_id": "EMP120",
+    "travel_type": "Ground Transport",
+    "vehicle_type": "Taxi",
+    "distance_km": 28,
+    "amount": 950,
+    "currency": "INR",
+    "scope_category": "Scope 3",
+    "status": "PENDING_REVIEW"
+  },
+  {
+    "trip_id": "TRV1004",
+    "employee_id": "EMP777",
+    "travel_type": "Flight",
+    "origin": "BLR",
+    "destination": "XYZ",
+    "cabin_class": "Business",
+    "distance_km": null,
+    "amount": 58000,
+    "currency": "INR",
+    "scope_category": "Scope 3",
+    "status": "INVALID_AIRPORT_CODE"
+  },
+  {
+    "trip_id": "TRV1005",
+    "employee_id": "EMP221",
+    "travel_type": "Flight",
+    "origin": "HYD",
+    "destination": "SIN",
+    "cabin_class": "Premium Economy",
+    "distance_km": 4920,
+    "amount": 88000,
+    "currency": "INR",
+    "scope_category": "Scope 3",
+    "status": "SUSPICIOUS_HIGH_COST"
+  }
+]

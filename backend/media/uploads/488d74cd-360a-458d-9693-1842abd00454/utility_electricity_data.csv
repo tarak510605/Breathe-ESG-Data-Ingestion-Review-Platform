@@ -1,0 +1,11 @@
+meter_id,facility_name,billing_start,billing_end,tariff_type,consumption_kwh,demand_kw,total_cost,utility_provider,status
+MTR1001,Chennai Plant A,2026-01-01,2026-01-31,Industrial Peak,45200,340,385000,TNEB,VALID
+MTR1002,Bangalore Warehouse,2026-01-03,2026-02-02,Commercial,18200,120,146000,BESCOM,VALID
+MTR1003,Mumbai Office Tower,2026-01-10,2026-02-09,Commercial,9200,75,98000,Adani Electricity,VALID
+MTR1004,Delhi Manufacturing Unit,2026-01-01,2026-01-31,Industrial Peak,150000,850,1280000,TPDDL,SUSPICIOUS_HIGH_USAGE
+MTR1005,Hyderabad Data Center,2026-01-05,2026-02-04,Industrial OffPeak,87000,420,720000,TSSPDCL,VALID
+MTR1006,Pune Logistics Hub,2026-01-01,2026-01-31,Commercial,-1500,20,24000,MSEDCL,INVALID_NEGATIVE
+MTR1007,Ahmedabad Plant,2026-01-15,2026-02-14,Industrial Peak,64000,390,550000,UGVCL,VALID
+MTR1008,Kolkata Office,2026-01-01,2026-01-31,Commercial,0,0,12000,CESC,MISSING_READING
+MTR1009,Noida Tech Park,2026-01-01,2026-01-31,Commercial,21000,130,178000,NPCL,DUPLICATE
+MTR1009,Noida Tech Park,2026-01-01,2026-01-31,Commercial,21000,130,178000,NPCL,DUPLICATE

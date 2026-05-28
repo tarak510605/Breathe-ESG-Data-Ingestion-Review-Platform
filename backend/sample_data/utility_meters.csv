@@ -1,0 +1,13 @@
+Meter_ID,Billing_Start,Billing_End,Service_Location,Consumption_kWh,Rate_Category
+EM-001,2025-01-01,2025-02-01,Facility A - Chicago,125000,Commercial
+EM-002,2025-01-01,2025-02-01,Facility B - Los Angeles,45000,Commercial
+EM-003,2025-01-01,2025-02-01,Facility C - New York,95000,Commercial
+EM-004,2025-01-01,2025-02-01,Facility D - Denver,32000,Commercial
+EM-005,2025-01-01,2025-02-01,Facility A - Chicago,18000,Industrial
+EM-006,2025-01-01,2025-02-01,Facility B - Los Angeles,5000,Residential
+EM-007,2025-01-01,2025-02-01,Facility C - New York,78000,Industrial
+EM-008,2025-01-01,2025-02-01,Facility D - Denver,9000,Residential
+EM-009,2025-01-01,2025-02-01,Facility E - Houston,110000,Commercial
+EM-010,2025-01-01,2025-02-01,Facility F - Seattle,38000,Commercial
+EM-011,2025-01-01,2025-02-01,Facility A - Chicago,42000,Commercial
+EM-012,2025-01-01,2025-02-01,Facility B - Los Angeles,67000,Industrial

@@ -1,0 +1,11 @@
+record_id,posting_date,plant_code,vendor_code,material_desc,fuel_type,quantity,unit,currency,total_cost_gl,scope_category
+SAP1001,2026-01-05,PLT_DE01,VEND778,Diesel Purchase,Diesel,1200,L,EUR,1860,Scope 1
+SAP1002,05/01/2026,PLT_US22,VEND102,Natural Gas Supply,Natural Gas,4500,m3,USD,5400,Scope 1
+SAP1003,2026.01.07,PLT_IN09,VEND551,Electric Forklift Charging,Electricity,12000,kWh,INR,96000,Scope 2
+SAP1004,07-01-2026,WERK_BER,VEND901,Benzin Lieferung,Petrol,850,L,EUR,1450,Scope 1
+SAP1005,2026/01/08,PLT_FR11,VEND300,Steel Procurement,Steel,4.5,ton,EUR,7800,Scope 3
+SAP1006,08-Jan-2026,PLT_IN11,VEND812,Office Supplies,Paper,350,kg,INR,22000,Scope 3
+SAP1007,2026-01-09,PLT_US14,VEND678,Generator Fuel,Diesel,99999,L,USD,140000,Scope 1
+SAP1008,2026-01-10,PLT_CN88,VEND321,Coal Supply,Coal,12,MT,CNY,56000,Scope 1
+SAP1009,10/01/2026,PLT_UK04,VEND654,Compressed Gas,Natural Gas,,m3,GBP,3200,Scope 1
+SAP1010,2026-01-11,PLT_IN20,VEND777,Cement Procurement,Cement,18,ton,INR,144000,Scope 3

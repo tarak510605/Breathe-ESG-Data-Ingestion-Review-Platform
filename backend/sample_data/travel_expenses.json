@@ -1,0 +1,94 @@
+[
+  {
+    "trip_id": "TRIP-2025-001",
+    "employee_id": "EMP-001",
+    "trip_start": "2025-01-15",
+    "trip_end": "2025-01-17",
+    "expenses": [
+      {
+        "type": "flight",
+        "origin": "JFK",
+        "destination": "LAX",
+        "cabin_class": "economy",
+        "pax_count": 1,
+        "cost": 450.00,
+        "currency": "USD"
+      },
+      {
+        "type": "hotel",
+        "location": "Los Angeles",
+        "checkindate": "2025-01-15",
+        "checkoutdate": "2025-01-17",
+        "nights": 2,
+        "cost": 350.00,
+        "currency": "USD"
+      },
+      {
+        "type": "ground_transport",
+        "mode": "taxi",
+        "distance_miles": 50,
+        "cost": 75.00,
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "trip_id": "TRIP-2025-002",
+    "employee_id": "EMP-002",
+    "trip_start": "2025-01-20",
+    "trip_end": "2025-01-22",
+    "expenses": [
+      {
+        "type": "flight",
+        "origin": "SFO",
+        "destination": "ORD",
+        "cabin_class": "business",
+        "pax_count": 1,
+        "cost": 1200.00,
+        "currency": "USD"
+      },
+      {
+        "type": "hotel",
+        "location": "Chicago",
+        "checkindate": "2025-01-20",
+        "checkoutdate": "2025-01-22",
+        "nights": 2,
+        "cost": 280.00,
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "trip_id": "TRIP-2025-003",
+    "employee_id": "EMP-003",
+    "trip_start": "2025-01-25",
+    "trip_end": "2025-01-26",
+    "expenses": [
+      {
+        "type": "flight",
+        "origin": "JFK",
+        "destination": "LHR",
+        "cabin_class": "economy",
+        "pax_count": 2,
+        "cost": 1800.00,
+        "currency": "USD"
+      },
+      {
+        "type": "hotel",
+        "location": "London",
+        "checkindate": "2025-01-25",
+        "checkoutdate": "2025-01-26",
+        "nights": 1,
+        "cost": 250.00,
+        "currency": "GBP"
+      },
+      {
+        "type": "ground_transport",
+        "mode": "public_transit",
+        "distance_miles": 30,
+        "cost": 45.00,
+        "currency": "GBP"
+      }
+    ]
+  }
+]
