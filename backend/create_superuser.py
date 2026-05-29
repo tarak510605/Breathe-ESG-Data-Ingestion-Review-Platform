@@ -1,23 +1,28 @@
 from django.contrib.auth import get_user_model
+from organizations.models import Organization
 
 User = get_user_model()
 
-email = "admin@example.com"
-password = "Admin123@"
+org, _ = Organization.objects.get_or_create(
+    slug="default",
+    defaults={"name": "Default Organization"}
+)
 
 user, created = User.objects.get_or_create(
     username="admin",
     defaults={
-        "email": email,
-        "is_superuser": True,
+        "email": "admin@example.com",
+        "organization": org,
         "is_staff": True,
+        "is_superuser": True,
     }
 )
 
-user.email = email
-user.set_password(password)
-user.is_superuser = True
+user.organization = org
+user.email = "admin@example.com"
 user.is_staff = True
+user.is_superuser = True
+user.set_password("Admin123@")
 user.save()
 
-print(f"Admin user ready: {email}")
+print("Admin user ready")
