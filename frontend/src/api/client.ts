@@ -1,7 +1,11 @@
 import axios, { AxiosInstance, AxiosError } from 'axios'
 
-// Use direct backend URL - Vite proxy not working reliably
-const API_URL = 'http://localhost:8000/api'
+console.log('VITE_API_URL =', import.meta.env.VITE_API_URL)
+
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+
+console.log(import.meta)
+console.log('API_URL =', API_URL)
 
 class APIClient {
   client: AxiosInstance
@@ -13,6 +17,8 @@ class APIClient {
         'Content-Type': 'application/json',
       },
     })
+
+    // rest of your existing code...
 
     // Add token to requests
     this.client.interceptors.request.use((config) => {
