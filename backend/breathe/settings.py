@@ -159,7 +159,7 @@ SIMPLE_JWT = {
 
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:3000,http://localhost:3001,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:3001,http://127.0.0.1:5173',
+    default='http://localhost:3000,http://localhost:3001,http://localhost:5173,https://breathe-esg-data-ingestion-review-p-eta.vercel.app',
     cast=lambda v: [s.strip() for s in v.split(',')]
 )
 
