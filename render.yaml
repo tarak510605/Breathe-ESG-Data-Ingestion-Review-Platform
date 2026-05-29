@@ -2,6 +2,7 @@ services:
   - type: web
     name: breathe-backend
     env: python
+    rootDir: backend
     region: oregon
     plan: starter
     buildCommand: pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --no-input
@@ -29,6 +30,7 @@ services:
   - type: web
     name: breathe-frontend
     env: node
+    rootDir: frontend
     region: oregon
     plan: starter
     buildCommand: npm install && npm run build
