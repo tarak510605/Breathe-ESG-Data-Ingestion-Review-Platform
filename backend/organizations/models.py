@@ -1,6 +1,6 @@
 import uuid
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, UserManager as BaseUserManager
 
 
 class Organization(models.Model):
@@ -29,6 +29,18 @@ class Organization(models.Model):
         return self.name
 
 
+class UserManager(BaseUserManager):
+    """Custom user manager to automatically assign a default organization when creating users without one."""
+    def _create_user(self, username, email, password, **extra_fields):
+        if not extra_fields.get('organization') and not extra_fields.get('organization_id'):
+            organization, _ = Organization.objects.get_or_create(
+                slug='default',
+                defaults={'name': 'Default Organization'}
+            )
+            extra_fields['organization'] = organization
+        return super()._create_user(username, email, password, **extra_fields)
+
+
 class User(AbstractUser):
     """Custom user model scoped to organization."""
     ROLE_CHOICES = [
@@ -41,6 +53,8 @@ class User(AbstractUser):
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE, related_name='users')
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, default='analyst')
     is_active = models.BooleanField(default=True)
+    
+    objects = UserManager()
     
     # Override M2M relationships to avoid clash with auth.User
     groups = models.ManyToManyField(
